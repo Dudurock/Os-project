@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+int main()
+{
+    int a[]={125,143,86,1470,913,1774,948,1509,1022,1750,130};
+    int size=11,i,distance=0,p=0,j=1;
+    	printf("\t\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n\n");
+				printf("\t\t\t\tLOOK DISK SCHEDULING \n\n");
+			printf("\t\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n\n");
+    for(i=0;i<size-1;i++)
+    {
+        if(a[p]>a[j])
+        {
+        distance=distance+(a[p]-a[j]);
+        }
+        else
+        {
+            distance=distance+(a[j]-a[p]);
+        }
+        p++;
+        j++;
+    }
+
+
+    printf("\n CURRENT SERVING REQUEST AT CYLINDER:    143\n");
+    printf("\n PREVIOUS REQUEST WAS AT CYLINDER:       125\n");
+    printf(" \nPENDING REQUESTS  :\n");
+    for(i=2;i<size;i++)
+    {
+        printf(" %d   ",a[i]);
+    }
+    printf("\n\n");
+
+         	printf("    +-----------------------------------------------------------------------------------------------------------+\n");
+			printf("    |  The total distance (in cylinders) that the disk arm moves to satisfy all the pending requests ::  %d   |\n ",distance);
+	    	printf("   +-----------------------------------------------------------------------------------------------------------+\n");
+   
+}
