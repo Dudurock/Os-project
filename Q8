@@ -170,7 +170,9 @@ int main()
      printf("\t\t\t\t\t##                                    ##\n");
      printf("\t\t\t\t\t########################################\n");
     printf("\n");
-      
+       printf("\t\t########################################\n");
+    printf("\t\t##        GANTT CHART                 ##\n");
+     printf("\t\t########################################\n\n");
     for(i=0;i<j;i++)
         printf("P%d     ",cycle[i]);
     printf("\n");
