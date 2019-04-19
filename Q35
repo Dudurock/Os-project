@@ -31,7 +31,10 @@ int main()
     }
 
 
-   
+    printf("\n CURRENT SERVING REQUEST AT CYLINDER:    143\n");
+    printf("\n PREVIOUS REQUEST WAS AT CYLINDER:       125\n");
+    printf(" \nPENDING REQUESTS  :\n");
+    for(i=2;i<size;i++)
     {
         printf(" %d   ",a[i]);
     }
