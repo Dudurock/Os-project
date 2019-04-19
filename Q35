@@ -6,6 +6,7 @@
 //Starting from the current head position, what is the total distance (in cylinders)that the disk
 //arm moves to satisfy all the pending requests for each of the C-LOOK disk-scheduling
 //algorithms?
+
 #include<stdio.h>
 
 int main()
